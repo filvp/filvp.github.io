@@ -9,6 +9,9 @@ menuBtn.addEventListener('click', function(){
 /* begin begin Back to Top button  */
 //Get the button:
 mybutton = document.getElementById("myBtn");
+mybutton.onclick = function(){
+    topFunction();
+};
 
 // When the user scrolls down 20px from the top of the document, show the button
 const wrapper = document.querySelector('.wrapper');
