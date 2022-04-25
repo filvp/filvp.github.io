@@ -49,7 +49,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   white-space: nowrap;
   display: inline-block;
   color: inherit;
@@ -99,6 +98,9 @@ section {
 
 .wrapper {
   height: 100vh;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y proximity;
+  scroll-snap-type: y proximity;
 }
 
 .scroll-snap {
@@ -121,9 +123,9 @@ section {
   text-align: left;
   word-wrap: break-word;
   hyphens: auto;
-  -moz-hyphens:;
-  -webkit-hyphens:;
-  -ms-hyphens:;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 h2 {
@@ -146,7 +148,7 @@ h4 {
   padding: 0 var(--s);
 }
 
-.hkog {
+.skin__title {
   font-size: 1.8rem;
 }
 
@@ -320,8 +322,8 @@ video {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main__videowrapper {
@@ -336,7 +338,7 @@ video {
   z-index: -1;
 }
 
-.videowrapper img {
+.main__videowrapper img {
   height: 100%;
   -o-object-fit: none;
      object-fit: none;
@@ -386,14 +388,6 @@ video {
 
 .productblock img {
   margin-bottom: .5em;
-}
-
-.kigelia p {
-  padding: var(--s) 0;
-}
-
-.tech {
-  padding: var(--xs) var(--xs);
 }
 
 /*Expert block*/
@@ -479,6 +473,10 @@ video {
 
 .inst {
   background-image: url(./i/instructia.jpg);
+}
+
+.instructia {
+  margin-top: .3em;
 }
 
 /*Distributors*/
